@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML Events</title>
+	</head>
+	<body>
+		<button id="myBtn">button</button>
+		<h2 id="myHeading">This is a H2 heading</h2>
+		<h3 id="myHeading2">This is a H3 heading</h3>
+		<h4 id="myHeading3">This is a H4 heading</h4>
+		<input id="inBox1">+
+		<input id="inBox2">
+		<h1 id="result"></h1>
+	</body>
+</html>
+<script>
+	//button
+	var btn = document.getElementById("myBtn");
+	btn.addEventListener("click", myFunction);
+	
+	//header1
+	var heading = document.getElementById("myHeading");
+	heading.addEventListener("click", myFunction);
+	
+	//header2
+	var heading = document.getElementById("myHeading2");
+	heading.addEventListener("mouseover", myFunction);
+	
+	//header3
+	var heading = document.getElementById("myHeading3");
+	heading.addEventListener("mouseout", myFunction);
+	
+	var num1 = document.getElementById("inBox1");
+	num1.addEventListener("input", Addition);
+	
+	var num2 = document.getElementById("inBox2");
+	num2.addEventListener("input", Addition);
+	
+	function myFunction() {
+		alert("This is an alert!");
+	}
+	
+	function Addition() {
+		//create num1
+		let num1 = document.getElementById("inBox1").value;
+		num1 = Number(num1);
+		
+		//create num2
+		let num2 = document.getElementById("inBox2").value;
+		num2 = Number(num2);
+		
+		//read in text
+		document.getElementById("result").innerHTML = "answer is " + (num1+num2);
+	}
+</script>

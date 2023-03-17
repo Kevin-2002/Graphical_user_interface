@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5 Events</title>
+	</head>
+	<body>
+		<input id="inBox1" oninput="myFunction()">+
+		<input id="inBox2" oninput="myFunction()">
+		
+		<h1 id="myHeading"></h1>
+	</body>
+</html>
+<script>
+	
+	function myFunction() {		
+		//create num1
+		let num1 = document.getElementById("inBox1").value;
+		num1 = Number(num1);
+		
+		//create num2
+		let num2 = document.getElementById("inBox2").value;
+		num2 = Number(num2);
+		
+		//read in text
+		document.getElementById("myHeading").innerHTML = "answer is " + (num1+num2);
+	}
+</script>

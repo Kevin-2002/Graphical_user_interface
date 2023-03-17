@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML Events</title>
+	</head>
+	<body>
+		<div id="clock"></div>
+	</body>
+</html>
+<script>
+	//set timer to retrieve data
+	setInterval(myTimer, 1000);
+	
+	function myTimer() {
+		//initialise date objects
+		let h = new Date();
+		let m = new Date();
+		let s = new Date();
+		
+		//run given methods to return time
+		document.getElementById("clock").innerHTML = h.getHours() + ":" +  m.getMinutes() + ":" + s.getSeconds();
+	}
+</script>

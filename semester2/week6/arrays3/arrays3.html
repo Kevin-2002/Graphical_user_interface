@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Arrays</title>
+	</head>
+	<body>
+		<h1>Shopping List</h1>
+		<ul id="items"></ul>
+		
+		<script>
+			//declare array
+			let list = ["Bread", "Milk", "Tea", "Biscuits", "Crisps"];
+			
+			//declare variables
+			let output = "";
+			
+			
+			for(let i = 0; i < list.length; i++) {
+				output += "<li>"+list[i];
+				document.getElementById("items").innerHTML = output;
+			}
+		</script>
+	</body>
+</html>

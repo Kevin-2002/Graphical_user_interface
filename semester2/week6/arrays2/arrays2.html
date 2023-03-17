@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Arrays</title>
+	</head>
+	<body>
+		<input id="fruitInput"> <button onclick="addFruit()">Add Fruit</button> <button onclick="displayArray()">Show Array</button>
+		<br><br>
+		<input id="indexFruit"> <button onclick="displayIndex()">Show Array Index</button>
+		<br><br>
+		<input id="fruitNameSrc"> <button onclick="findIndexNumber()">Search</button>
+		<br><br>
+		<button onclick="removeFruit()">Delete Index</button> <input id="FruitValue">
+		
+		
+		<h4>output:</h4>
+		<h1 id="arrayWriter"></h1>
+		<h1 id="indexWriter"></h1>
+		<h1 id="FruitNumberWriter"></h1>
+		<script>
+			//declare array
+			let fruit = ["Banana", "Apple", "Orange", "Pear"];
+			
+			//addFruit method
+			function addFruit() {
+				textInBox = document.getElementById("fruitInput").value;
+				fruit.push(textInBox);
+			}
+			
+			//displayArray method
+			function displayArray() {
+				document.getElementById("arrayWriter").innerHTML = fruit;
+			}
+			
+			//displayIndex method
+			function displayIndex() {
+				//read in box input
+				let index = document.getElementById("indexFruit").value;
+				index = Number(index);
+				
+				if(index >= fruit.length) {
+					alert("Value is too high - there aren't that many elements in this array!");
+				}
+				//output
+				document.getElementById("indexWriter").innerHTML = fruit[index];
+			}
+			
+			//findIndexNumber method
+			function findIndexNumber() {
+				let fruitName = document.getElementById("fruitNameSrc").value;
+				let indexNo = fruit.indexOf(fruitName);
+				document.getElementById("FruitNumberWriter").innerHTML = indexNo;
+			}
+			
+			//removeFruit method
+			function removeFruit() {
+				let fruitNumber = document.getElementById("FruitValue").value;
+				fruitNumber = Number(fruitNumber);
+				
+				//remove value
+				fruit.splice(fruitNumber,1);
+			}
+			
+		</script>
+	</body>
+</html>

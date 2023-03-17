@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5 Events</title>
+	</head>
+	<body>
+		<h1 id="myHeading"></h1>
+		
+		<input id="inBox" oninput="myFunction()">
+	</body>
+</html>
+<script>
+	
+	function myFunction() {
+		//declare variables
+		let textInBox;
+		
+		//get value from box and store in variable
+		textInBox = document.getElementById("inBox").value;
+		
+		//output the string value stored in the variable
+		document.getElementById("myHeading").innerHTML = textInBox;
+	}
+</script>

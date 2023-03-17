@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML Events</title>
+	</head>
+	<body>
+		<input id="inBox">
+	</body>
+</html>
+<script>
+	//add html listener
+	var event = document.getElementById("inBox");
+	event.addEventListener("blur", changeAnd);
+	
+	function changeAnd() {
+		//replace & with 'and'
+		event.value = event.value.replaceAll('&', 'and');
+	}
+</script>

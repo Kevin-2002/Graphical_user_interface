@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>The DOM</title>
+	</head>
+	<body>
+		
+		<span>Enter your name:</span>
+		<input id="inBox">
+		<button onclick="getInput()">Generate Greeting</button>
+		<h1 id="heading1"></h1>
+		
+		<script>
+			function getInput() {
+				let name = document.getElementById("inBox").value;
+				document.getElementById("heading1").innerHTML = "Hello " + name;
+			}
+		</script>
+	</body>
+</html>

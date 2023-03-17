@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML Events</title>
+	</head>
+	<body>
+		Username:<input id="inBox">
+		
+		<h1 id="Heading"></h1>
+	</body>
+</html>
+<script>
+	//add html5 event to run function
+	var username = document.getElementById("inBox");
+	username.addEventListener("input", charCount);
+	
+	function charCount() {
+		//put input value into variable
+		let count = document.getElementById("inBox").value;
+		
+		//output String and String.length to console 
+		console.log(count);
+		console.log(count.length);
+		
+		//run if statement to give appropriate output
+		if(count.length < 6)
+		{
+			document.getElementById("Heading").innerHTML = "Input must be a minimum of 6 characters";
+		}
+		else if(count.length >= 6)
+		{
+			document.getElementById("Heading").innerHTML = "Valid username";
+		}
+	}
+</script>

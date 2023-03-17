@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="UTF-8">
+		<title>The DOM</title>
+	</head>
+	<body>
+		<button onclick="changeToImage()">Change to Image</button>
+		<h1 id="myText">This is JavaScript</h1>
+		Width: <input id="width"> Height: <input id="height"> <br><br>
+		<button onclick="changeToImageSize()">Change to size specified</button>
+		<script>
+			function changeToImage() {
+				document.getElementById("myText").innerHTML = "<img id='picture' src='./js.jpg' alt='picture'>";
+			}
+			function changeToImageSize() {
+				let width = document.getElementById("width").value;
+				width = Number(width);
+				
+				let height = document.getElementById("height").value;
+				height = Number(height);
+				
+				document.getElementById("picture").style.width = width + "px";
+				document.getElementById("picture").style.height = height + "px";
+			}
+		</script>
+	</body>
+</html>

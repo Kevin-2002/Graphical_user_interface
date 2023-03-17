@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>page 2</title>
+	</head>
+	<body>
+		<h1>This is Page 2</h1>
+		
+		<a href="page1.html" target="_self">Go to page 1</a>
+		<br>
+		<br>
+		<button onclick="getName()">Retrieve from Session Storage</button>
+		<h2 id="name"><h2>
+	</body>
+</html>
+<script>
+	function getName() {
+		document.getElementById("name").textContent = sessionStorage.name;
+	}
+</script>

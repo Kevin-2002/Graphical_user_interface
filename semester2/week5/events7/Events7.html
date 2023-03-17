@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML Events</title>
+	</head>
+	<body id="body">
+		<input id="inBox">
+	</body>
+</html>
+<script>
+	//add html listener
+	var text = document.getElementById("inBox");
+	text.addEventListener("keydown", pass);
+	
+	function pass() {
+		changeColor(event);
+	}
+	
+	function changeColor(event) {
+		var trigger = event.key;
+		
+		if(trigger == "r" || trigger == "R") 
+		{
+			document.getElementById("body").style.backgroundColor = "red";
+			document.getElementById("inBox").style.backgroundColor = "red";
+		}
+		else if(trigger == "g" || trigger == "G") 
+		{
+			document.getElementById("body").style.backgroundColor = "green";
+			document.getElementById("inBox").style.backgroundColor = "green";
+		}
+		else if(trigger == "b" || trigger == "B") 
+		{
+			document.getElementById("body").style.backgroundColor = "blue";
+			document.getElementById("inBox").style.backgroundColor = "blue";
+		}
+		else 
+		{
+			document.getElementById("body").style.backgroundColor = "white";
+			document.getElementById("inBox").style.backgroundColor = "white";
+		}
+	}
+</script>

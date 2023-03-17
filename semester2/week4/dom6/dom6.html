@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>The DOM</title>
+	</head>
+	<body>
+		<h1>Calculator</h1>
+		<span>Number 1:</span>
+		<input id="inBox1"><br><br>
+		<span>Number 2:</span>
+		<input id="inBox2"><br><br>
+		<button onclick="add()">Add</button>
+		<button onclick="multiply()">Multiply</button>
+		<button onclick="subtract()">Subtract</button>
+		<button onclick="divide()">Divide</button>
+		<h1 id="heading"></h1>
+		
+		<script>
+			function add() {
+				let num1 = document.getElementById("inBox1").value;
+				num1 = Number(num1);
+				
+				let num2 = document.getElementById("inBox2").value;
+				num2 = Number(num2);
+				
+				document.getElementById("heading").innerHTML = "ANSWER: " + num1 + " plus " + num2 + " = " + (num1+num2);
+			}
+			function multiply() {
+				let num1 = document.getElementById("inBox1").value;
+				num1 = Number(num1);
+				
+				let num2 = document.getElementById("inBox2").value;
+				num2 = Number(num2);
+				
+				document.getElementById("heading").innerHTML = "ANSWER: " + num1 + " times " + num2 + " = " + (num1*num2);
+			}
+			function subtract() {
+				let num1 = document.getElementById("inBox1").value;
+				num1 = Number(num1);
+				
+				let num2 = document.getElementById("inBox2").value;
+				num2 = Number(num2);
+				
+				document.getElementById("heading").innerHTML = "ANSWER: " + num1 + " minus " + num2 + " = " + (num1-num2);
+			}
+			function divide() {
+				let num1 = document.getElementById("inBox1").value;
+				num1 = Number(num1);
+				
+				let num2 = document.getElementById("inBox2").value;
+				num2 = Number(num2);
+				
+				document.getElementById("heading").innerHTML = "ANSWER: " + num1 + " into " + num2 + " = " + (num1/num2);
+			}
+		</script>
+	</body>
+</html>

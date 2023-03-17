@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>page 1</title>
+	</head>
+	<body>
+		<h1>This is Page 1</h1>
+		Enter Name: <input id="name"> <button id="toSave">Save</button>
+		<br>
+		<br>
+		<a href="page2.html" target="_self">Go to page 2</a>
+	</body>
+</html>
+<script>
+	let event = document.getElementById("toSave");
+	event.addEventListener("click", save);
+	
+	function save() {
+		sessionStorage.name = document.getElementById("name").value;
+	}
+</script>

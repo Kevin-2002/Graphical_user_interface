@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="UTF-8">
+		<title>The DOM</title>
+	</head>
+	<body>
+		<h1>Changing styles with the DOM</h1>
+		<h2 id="myText">Change this Text</h2>
+		<button onclick="changeColor()">Change Colour of H2</button>
+		<button onclick="changeSize()">Change Font Size of H2</button>
+		<button onclick="changeStyle()">Change Font Style of H2</button>
+		<script>
+			function changeColor() {
+				document.getElementById("myText").style.color = "red";
+			}
+			function changeSize() {
+				document.getElementById("myText").style.fontSize = "medium";
+			}
+			function changeStyle() {
+				document.getElementById("myText").style.fontStyle = "italic";
+			}
+		</script>
+	</body>
+</html>
