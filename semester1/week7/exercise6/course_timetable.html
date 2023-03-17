@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			table {text-align: center;}
+			#days {
+					color: white;
+					background-color: black;
+				}
+			.Headers {background-color: yellow;}
+			table {background-color: lightyellow}
+			.tabledata {background-color: green;}
+			.hyperlinktext {color: white;}
+			.longer {background-color: darkblue;}
+			.redcell {background-color: darkred;}
+		</style>
+		<title>Course Timetable</title>
+	</head>
+	
+	<body>
+		<table border="1" cellpadding="10">
+		<caption><b>Sample College Timetable</b></caption>
+			<tr class="Headers">
+				<th id="days">Day of the Week</th>
+				<th>9-10</th>
+				<th>10-11</th>
+				<th>11-12</th>
+				<th>12-13</th>
+				<th>13-14</th>
+				<th>14-15</th>
+				<th>15-16</th>
+				<th>16-17</th>
+			</tr>
+			<tr>
+				<th class="Headers">Monday</th>
+				<td title="1 Hour" class="tabledata"><a href="" class="hyperlinktext">Java Lecture</a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td title="3 Hours" colspan="3" class="longer"><a href="" class="hyperlinktext">Java Lab</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th class="Headers">Tuesday</th>
+				<td title="1 Hour" class="tabledata"><a href="" class="hyperlinktext">Maths</a></td>
+				<td></td>
+				<td title="1 Hour" class="tabledata"><a href="" class="hyperlinktext">E-Bus</a></td>
+				<td></td>
+				<td></td>
+				<td title="3 Hours" colspan="3" class="longer"><a href="" class="hyperlinktext">GUI Lab</a></td>
+			</tr>
+			<tr>
+				<th class="Headers">Wednesday</th>
+				<td title="2 Hours" colspan="2" class="tabledata"><a href="" class="hyperlinktext">Maths</a></td>
+				<td title="1 Hour" class="tabledata"><a href="" class="hyperlinktext">Java Lecture</a></td>
+				<td></td>
+				<td></td>
+				<td title="1 Hour" class="redcell"><a href="" class="hyperlinktext">Java Tutorial</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th class="Headers">Thursday</th>
+				<td title="1 Hour" class="redcell"><a href="" class="hyperlinktext">LIS</a></td>
+				<td></td>
+				<td title="2 Hours" colspan="2" class="tabledata"><a href="" class="hyperlinktext">Java Lecture</a></td>
+				<td title="1 Hour" class="tabledata"><a href="" class="hyperlinktext">E-Bus</a></td>
+				<td></td>
+				<td title="1 Hour" class="tabledata"><a href="" class="hyperlinktext">Java Lecture</a></td>
+				<td title="1 Hour" class="tabledata"><a href="" class="hyperlinktext">LIS Lecture</a></td>
+			</tr>
+			<tr>
+				<th class="Headers">Friday</th>
+				<td title="1 Hour" class="tabledata"><a href="" class="hyperlinktext">E-Bus</a></td>
+				<td title="1 Hour" class="tabledata"><a href="" class="hyperlinktext">GUI Lecture</a></td>
+				<td></td>
+				<td title="1 Hour" class="redcell"><a href="" class="hyperlinktext">Maths Tutorial</a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+	
+</html>

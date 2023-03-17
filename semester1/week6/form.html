@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+	  <title>Form</title>
+	</head>
+
+	<body>
+		<form onsubmit="return false;">	
+			<table>
+				<tr>
+					<td>Username:</td>
+					<td><input /></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password"/></td>
+				</tr>
+			</table>
+			
+			<h2>Enter comment</h2>
+			<textarea rows="4" cols="20" placeholder="Enter comment here ..."></textarea>
+
+			<h2>Favourite Halloween Character</h2>
+			<input type="radio" name="fav_char" value="ghost"/> Ghost <br>
+			<input type="radio" name="fav_char" value="witch"/> Witch <br>
+			<input type="radio" name="fav_char" value="scarecrow" checked /> Scarecrow <br>
+			
+			<h2>Favourite Halloween Treats</h2>
+			<input type="checkbox" name="treats" value="ch" /> Chocolate <br>
+			<input type="checkbox" name="treats" value="je" checked /> Jellies <br>
+			<input type="checkbox" name="treats" value="nuts"/> Nuts <br>
+			
+			<h2>Favourite Team</h2>
+			<select name="teams" id="team">
+				<option disabled selected>Select your option</option>
+				<option>Man Utd</option>
+				<option>Liverpool</option>
+				<option>Man City</option>
+			</select>
+			<br><br>
+			<input type="submit"/>
+		</form>
+	</body>
+
+</html>
+
+
+
