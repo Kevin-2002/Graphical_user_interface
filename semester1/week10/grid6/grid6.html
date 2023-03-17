@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			div {
+				grid-template-rows: 100px auto auto;
+				text-align: center;
+			}
+			.boxes{	
+					border: 2px solid black;
+					background-color: lightyellow;
+			}
+			.container {
+						width: 40%;
+						display: grid;
+						grid-template-columns: 1fr 1fr 1fr;
+			}
+			#box1 {
+					grid-column: span 3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="boxes" id="box1">The Story of CSS Grid, from it's Creators</div>
+			<div class="boxes" id="box2">	
+										While the modern concept of a grid layout has been with us since the Industrial Revolution, grids
+										have been a design tool for centuries. As such, it shouldn’t come as a shock that grid-based
+										layouts have been a goal of CSS since the beginning. According to Dr. Bert Bos, who co-created
+										CSS with Håkon Wium Lie, grid-based layouts have actually been on his mind for quite some time.
+										“CSS started as something very simple,” Bos recalled. “It was just a way to create a view of a
+										document on a very simple small screen at the time. Twenty years ago, screens were very small.
+										So, when we saw that we could make a style sheet for documents, we thought, Well, what else can
+										we do now that we have a system for making style sheets?
+			</div>
+			<div class="boxes">Box 3</div>
+			<div class="boxes">Box 4</div>
+	</body>
+</html>

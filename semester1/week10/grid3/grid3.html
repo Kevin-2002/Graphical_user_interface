@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			div {
+				grid-template-rows: 100px 100px 100px;
+				grid-gap: 10px;
+			}
+			.boxes{	
+					border: 10px solid blue;
+					background-color: pink;
+			}
+			.container {
+						display: grid;
+						grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+			#box2 {background-color: lightgreen;}
+			#box7 {background-color: lightblue;}
+			#box9 {background-color: orange;}
+			#box11 {
+					color: white;
+					background-color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="boxes">Box 1</div>
+			<div class="boxes" id="box2">Box 2</div>
+			<div class="boxes">Box 3</div>
+			<div class="boxes">Box 4</div>
+			<div class="boxes">Box 5</div>
+			<div class="boxes">Box 6</div>
+			<div class="boxes" id="box7">Box 7</div>
+			<div class="boxes">Box 8</div>
+			<div class="boxes" id="box9">Box 9</div>
+			<div class="boxes">Box 10</div>
+			<div class="boxes" id="box11">Box 11</div>
+			<div class="boxes">Box 12</div>
+	</body>
+</html>
